@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>數學闖關</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#6d5dd3">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="數學闖關">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<style>
+  html,body{margin:0;height:100%;background:#ece9ff;font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif}
+  #app{position:fixed;left:0;right:0;bottom:0;top:env(safe-area-inset-top,0);width:100%;height:calc(100% - env(safe-area-inset-top,0px));border:0;background:#ece9ff}
+  #ld{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#4c3fb0;font-weight:700;background:#ece9ff;transition:opacity .4s}
+  #ld img{width:120px;height:120px;border-radius:28px;animation:bob 2s ease-in-out infinite}
+  #ld.off{opacity:0;pointer-events:none}
+  #off{display:none;position:fixed;inset:0;align-items:center;justify-content:center;text-align:center;padding:24px;background:#ece9ff;color:#333}
+  @keyframes bob{50%{transform:translateY(-8px)}}
+  @media (prefers-color-scheme:dark){html,body,#app,#ld,#off{background:#161729;color:#ddd}#ld{color:#b9b2ff}}
+</style>
+</head>
+<body>
+<iframe id="app" title="國二數學闖關" allow="autoplay" src="https://script.google.com/macros/s/AKfycbwDlDkxuUSzlL5-SkqiZsO5P1wNBlJ7k-wPfVb4SGLksu23TBN3BR2SmRC4_SbT5NGVvQ/exec"></iframe>
+<div id="ld"><img src="icon-192.png" alt=""><div>數學闖關載入中…</div></div>
+<div id="off"><div><p style="font-size:1.2rem;font-weight:700">沒有網路</p><p>連上網路後再打開一次就可以繼續闖關。</p></div></div>
+<script>
+  var f = document.getElementById('app'), ld = document.getElementById('ld');
+  f.addEventListener('load', function () { ld.classList.add('off'); });
+  setTimeout(function () { ld.classList.add('off'); }, 12000);
+  function net() { document.getElementById('off').style.display = navigator.onLine ? 'none' : 'flex'; }
+  window.addEventListener('online', function () { net(); f.src = f.src; });
+  window.addEventListener('offline', net); net();
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
+</script>
+</body>
+</html>
