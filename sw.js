@@ -1,5 +1,5 @@
 /* 數學闖關 App 外殼：只快取外殼檔案（題目與成績都在 Google 試算表，不快取）。圖示有換時把版本號 +1 */
-var CACHE = 'mq-shell-v4';
+var CACHE = 'mq-shell-v5';
 var SHELL = ['./', 'index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(CACHE).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));

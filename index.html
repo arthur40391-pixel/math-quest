@@ -13,51 +13,40 @@
 <meta name="apple-mobile-web-app-title" content="數學闖關">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>
-  html,body{margin:0;height:100%;background:#ece9ff;font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif}
-  #wrap{position:fixed;top:env(safe-area-inset-top,0);bottom:env(safe-area-inset-bottom,0);left:env(safe-area-inset-left,0);right:env(safe-area-inset-right,0);background:#ece9ff} /* 不要 overflow 捲動：iPhone 在可捲動容器裡的 iframe 點輸入框會叫不出鍵盤 */
-  /* iPhone Safari 會把 iframe 撐成內容寬度：用 1px＋min-width 100% 固定成螢幕寬 */
-  #app{display:block;width:1px;min-width:100%;max-width:100%;height:100%;border:0;background:#ece9ff}
-  .cover{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;background:#ece9ff;color:#4c3fb0;font-weight:700;transition:opacity .4s}
-  .cover img{width:120px;height:120px;border-radius:28px;animation:bob 2s ease-in-out infinite}
-  .cover.off{opacity:0;pointer-events:none}
-  .cover p{margin:0;color:#444;font-weight:400;line-height:1.6}
-  .btn{display:inline-block;background:#6d5dd3;color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:14px}
-  #off,#slow{display:none}
+  html,body{margin:0;height:100%;font-family:system-ui,-apple-system,"PingFang TC","Noto Sans TC",sans-serif;background:linear-gradient(165deg,#f4f0ff,#e6dfff 60%,#ffe9f4);color:#2b2160}
+  .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:calc(24px + env(safe-area-inset-top,0)) 24px calc(24px + env(safe-area-inset-bottom,0));box-sizing:border-box}
+  .icon{width:150px;height:150px;border-radius:36px;box-shadow:0 14px 30px rgba(80,60,180,.28);animation:bob 2.2s ease-in-out infinite}
+  h1{margin:6px 0 0;font-size:2rem;letter-spacing:2px}
+  .sub{color:#5b4bc4;font-weight:700}
+  .go{display:block;width:min(320px,100%);margin-top:10px;background:linear-gradient(135deg,#7c6cf0,#5b4bc4);color:#fff;text-decoration:none;font-size:1.3rem;font-weight:800;padding:18px 0;border-radius:18px;box-shadow:0 10px 24px rgba(91,75,196,.35)}
+  .go:active{transform:scale(.97)}
+  .note{font-size:.88rem;color:#555;line-height:1.7;max-width:320px}
+  #off{display:none;color:#b91c1c;font-weight:700}
   @keyframes bob{50%{transform:translateY(-8px)}}
-  @media (prefers-reduced-motion:reduce){.cover img{animation:none}}
+  @media (prefers-reduced-motion:reduce){.icon{animation:none}}
+  @media (prefers-color-scheme:dark){html,body{background:linear-gradient(165deg,#1b1a33,#24204a);color:#eee}.sub{color:#b9b2ff}.note{color:#bbb}}
 </style>
 </head>
 <body>
-<div id="wrap"><iframe id="app" title="國二數學闖關" allow="autoplay" scrolling="yes"></iframe></div>
-<div id="ld" class="cover"><img src="icon-192.png" alt=""><div>數學闖關載入中…</div></div>
-<div id="slow" class="cover"><img src="icon-192.png" alt=""><div>好像打不開</div><p>這台手機的 App 模式可能擋住了遊戲，<br>改用瀏覽器開就可以玩（帳號、成績都一樣）。</p><a class="btn" id="open" target="_blank" rel="noopener">用瀏覽器開啟</a><a href="#" id="retry" style="color:#6d5dd3">再試一次</a></div>
-<div id="off" class="cover"><div>沒有網路</div><p>連上網路後就可以繼續闖關。</p></div>
+<div class="wrap">
+  <img class="icon" src="icon-192.png" alt="">
+  <h1>數學闖關</h1>
+  <div class="sub">國二數學・段考複習</div>
+  <a class="go" id="go" href="#">開始闖關 ▶</a>
+  <div id="off">現在沒有網路，連上網路後再按「開始闖關」。</div>
+  <div class="note">帳號、積分、錯題都和原本的網頁一樣。<br>第一次可能要再登入一次。</div>
+</div>
 <script>
+  /* iPhone 的 App 模式不讓嵌入的網頁叫出鍵盤，所以直接打開遊戲網址（不嵌入） */
   var GAME = 'https://script.google.com/macros/s/AKfycbwDlDkxuUSzlL5-SkqiZsO5P1wNBlJ7k-wPfVb4SGLksu23TBN3BR2SmRC4_SbT5NGVvQ/exec';
-  var f = document.getElementById('app'), ld = document.getElementById('ld'), slow = document.getElementById('slow'), off = document.getElementById('off');
-  var ready = false, timer = 0;
-  document.getElementById('open').href = GAME;
-  function start() {
-    ready = false; slow.style.display = 'none'; ld.classList.remove('off');
-    f.src = GAME;
-    clearTimeout(timer);
-    timer = setTimeout(function () { if (!ready) { ld.classList.add('off'); slow.style.display = 'flex'; } }, 12000);
-  }
-  /* 遊戲畫面出現（登入頁或首頁）時，遊戲會送 mq-ready 過來；只信 Google 的網域 */
-  window.addEventListener('message', function (e) {
-    var o = String(e.origin || '');
-    if (e.data === 'mq-ready' && /\.googleusercontent\.com$/.test(o)) {
-      ready = true; clearTimeout(timer); ld.classList.add('off'); slow.style.display = 'none';
-    }
-  });
-  document.getElementById('retry').onclick = function (e) { e.preventDefault(); start(); };
-  function net() {
-    off.style.display = navigator.onLine ? 'none' : 'flex';
-  }
-  /* 網路斷了又回來：遊戲已經開好就不重新整理（避免打到一半的回合不見） */
-  window.addEventListener('online', function () { net(); if (!ready) start(); });
-  window.addEventListener('offline', net);
-  net(); start();
+  var go = document.getElementById('go');
+  go.href = GAME;
+  function net() { document.getElementById('off').style.display = navigator.onLine ? 'none' : 'block'; }
+  window.addEventListener('online', net); window.addEventListener('offline', net); net();
+  /* 打開 App 時自動進遊戲一次；從遊戲回來（關掉遊戲視窗）就停在這頁，按按鈕再進去 */
+  try {
+    if (navigator.onLine && !sessionStorage.getItem('mq_auto')) { sessionStorage.setItem('mq_auto', '1'); setTimeout(function () { location.href = GAME; }, 700); }
+  } catch (e) {}
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () {});
 </script>
 </body>
