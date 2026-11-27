@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta property="og:title" content="重燃星序塔｜新賽季預告">
+<title>重燃星序塔</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+/* 版面：星夜塔樓直式長卷；章節圖當地標，怪獸以關卡卡片排在各據點下。刻意只做夜空深色一種外觀。 */
+:root{--bg:#0e1226;--panel:#171c38;--line:#2c3466;--fg:#ecebf7;--mute:#a7a9cc;--gold:#f3c14b;--violet:#b48cff;--mint:#7ee0c3;--red:#ff7a7a;--ink:#1b1630;--fade:#0e1226f0;
+--display:"Noto Serif TC","Songti TC",serif;--body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.7}
+.wrap{max-width:960px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;margin:0;letter-spacing:.02em}
+.hero{position:relative;max-width:960px;margin:0 auto}
+.hero img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.hero .t{position:absolute;left:0;right:0;bottom:0;padding:56px max(16px,env(safe-area-inset-left,0px)) 18px;background:linear-gradient(transparent,var(--fade))}
+.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.2em;font-size:.82rem}
+.hero h1{font-size:clamp(2.2rem,7vw,4rem);font-weight:900;color:var(--fg);text-shadow:0 2px 18px #b48cff88}
+.intro{max-width:65ch;margin:24px auto 0;color:var(--mute)} .intro p{margin:.4em 0}
+section{margin-top:56px} h2{font-size:1.7rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px} h2 small{font-family:var(--body);font-size:.85rem;color:var(--mute);font-weight:500}
+.duo{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center;margin-top:16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px}
+.duo img{width:100%;height:auto} .duo p{margin:.3em 0} .duo b{color:var(--violet)}
+.evo{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:16px}
+.evo figure{margin:0;text-align:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px 4px;min-width:0}
+.evo img{width:100%;max-width:100px;height:auto} .evo figcaption{font-size:.78rem;color:var(--mute);line-height:1.3} .evo b{display:block;color:var(--gold);font-variant-numeric:tabular-nums}
+.chap{margin-top:36px}
+.ch-head{position:relative} .ch-img{width:100%;height:auto;border-radius:16px;display:block;aspect-ratio:3/2;object-fit:cover}
+.ch-cap{position:absolute;left:0;right:0;bottom:0;padding:44px 18px 14px;background:linear-gradient(transparent,var(--fade));border-radius:0 0 16px 16px}
+.ch-cap h3{font-size:1.9rem;color:var(--fg)} .ch-cap p{margin:.2em 0 0;color:var(--fg);opacity:.85;font-size:.92rem;max-width:60ch}
+.unit{display:inline-block;background:var(--gold);color:var(--ink);font-weight:700;font-size:.78rem;padding:2px 10px;border-radius:99px;letter-spacing:.05em}
+.mons{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:12px}
+.mon{display:flex;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;min-width:0}
+.mon img{width:104px;height:104px;flex:none;image-rendering:pixelated}
+.mt{min-width:0} .no{color:var(--gold);font-size:.75rem;font-weight:700;letter-spacing:.1em} .mon h4{font-size:1.2rem}
+.sec{margin:0;color:var(--mint);font-size:.85rem} .look{margin:.3em 0 0;color:var(--mute);font-size:.86rem;line-height:1.6}
+.boss{display:grid;grid-template-columns:240px 1fr;gap:20px;align-items:center;margin-top:16px;background:var(--panel);border:1px solid var(--red);border-radius:16px;padding:18px}
+.boss img{width:100%;height:auto;image-rendering:pixelated} .boss h3{font-size:2rem;color:var(--red)}
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0} .box h3{font-size:1.15rem;margin-bottom:8px}
+.bars{display:grid;gap:8px} .bar{display:grid;grid-template-columns:4.5em 1fr;gap:8px;align-items:center;font-size:.85rem;color:var(--mute)}
+.bar i{display:flex;gap:3px} .bar i span{flex:1;height:12px;border-radius:3px}
+.mb span{background:var(--red)} .hb span{background:var(--mint)} .hb span.x{background:var(--line)}
+table{width:100%;border-collapse:collapse;font-size:.92rem} td,th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left} th{color:var(--mute);font-weight:500;font-size:.8rem}
+td.p{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums;text-align:right} th.p{text-align:right} .st{color:var(--gold);letter-spacing:.1em}
+ol.path{list-style:none;padding:0;margin:16px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;counter-reset:s}
+ol.path li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;counter-increment:s;min-width:0}
+ol.path li::before{content:"第 " counter(s) " 步";display:block;color:var(--gold);font-size:.78rem;font-weight:700;letter-spacing:.1em}
+ol.path b{display:block;font-family:var(--display);font-size:1.1rem} ol.path span{color:var(--mute);font-size:.88rem}
+.note{color:var(--mute);font-size:.88rem;margin-top:10px}
+.end img{width:100%;height:auto;border-radius:16px;aspect-ratio:3/2;object-fit:cover}
+.end p{text-align:center;font-family:var(--display);font-size:1.4rem;color:var(--gold);margin-top:14px}
+@media (max-width:640px){.duo,.boss{grid-template-columns:1fr;justify-items:center;text-align:center} .duo img{max-width:180px} .boss img{max-width:220px}
+.evo{grid-template-columns:repeat(4,1fr)} .rules,ol.path{grid-template-columns:1fr} .ch-cap h3{font-size:1.5rem} .ch-cap p{display:none}}
+</style>
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
+<header class="hero"><img src="img/scene_intro.webp" alt="星序塔的開場畫面" width="900" height="600"><div class="t"><div class="eyebrow">第三次段考　新賽季</div><h1>重燃星序塔</h1></div></header>
+<div class="wrap">
+<div class="intro"><p>亂算咒解除沒多久，段考魔王斷序惡魔就切斷了星序觀測塔的訊號。要塞的橋突然收起，神殿的鏡子轉了向，港口堆滿送不出去的貨，十三位守護者也陷入沉睡般的混亂，擋住了各處的去路。</p><p>身為勇者的你剛踏上石階，魔法劍士星律就握著＋字護手的長劍跑來，淡紫短髮上的三角形髮夾閃了一下。</p><p>「只要讓四處的訊號重新接上，守護者就能帶我們找到魔王。走吧，第一站，零刻要塞！」</p></div>
+<section><h2>主角<small>你是勇者，夥伴是魔法劍士星律</small></h2>
+<div class="duo"><img src="img/hero.webp" alt="星律" width="360" height="360"><div><h3>星律</h3><p>淡紫色短髮、金色三角形髮夾，手握<b>＋字護手長劍</b>的魔法劍士，劍身刻著三角形與 √ 紋。</p><p>答題時陪在勇者身邊：答對時一起出劍，答錯時提醒你哪裡算錯。</p></div></div>
+<div class="evo"><figure><img src="img/e1.webp" alt="見習劍士" width="100" height="100"><figcaption><b>Lv1</b>見習劍士</figcaption></figure><figure><img src="img/e2.webp" alt="符紋劍士" width="100" height="100"><figcaption><b>Lv2</b>符紋劍士</figcaption></figure><figure><img src="img/e3.webp" alt="魔法劍士" width="100" height="100"><figcaption><b>Lv3</b>魔法劍士</figcaption></figure><figure><img src="img/e4.webp" alt="水晶劍豪" width="100" height="100"><figcaption><b>Lv4</b>水晶劍豪</figcaption></figure><figure><img src="img/e5.webp" alt="大魔劍師" width="100" height="100"><figcaption><b>Lv5</b>大魔劍師</figcaption></figure><figure><img src="img/e6.webp" alt="星辰劍聖" width="100" height="100"><figcaption><b>Lv6</b>星辰劍聖</figcaption></figure><figure><img src="img/e7.webp" alt="傳說數學劍王" width="100" height="100"><figcaption><b>Lv7</b>傳說數學劍王</figcaption></figure></div>
+<p class="note">星律會跟著你的努力進化，從見習劍士一路成為傳說數學劍王。</p></section>
+<section><h2>四座據點、十三位守護者<small>一節一隻，依序挑戰</small></h2><section class="chap"><div class="ch-head"><img class="ch-img" src="img/story_u1.webp" alt="零刻要塞" width="900" height="600"><div class="ch-cap"><span class="unit">4-1 一元二次方程式</span><h3>零刻要塞</h3><p>玄鐵吊橋跨過深谷，橋頭的等號閘門兩側各有一排藍白符文，右側歸零時底燈亮起。</p></div></div><div class="mons"><article class="mon"><img src="img/m01.webp" alt="永恆騎士" width="128" height="128"><div class="mt"><span class="no">第 1 關</span><h4>永恆騎士</h4><p class="sec">一元二次方程式的意義</p><p class="look">銀白重甲騎士，頭盔後懸著一圈金色日輪。左右肩甲各垂一枚秤錘，胸口刻著藍色等號。把解代回去時，兩枚秤錘同時停在同一高度，胸甲才會亮起。</p></div></article><article class="mon"><img src="img/m02.webp" alt="零鎖魔像" width="128" height="128"><div class="mt"><span class="no">第 2 關</span><h4>零鎖魔像</h4><p class="sec">因式分解法解一元二次方程式</p><p class="look">身體像一扇厚重的黑石門，兩隻巨臂交扣成鎖，分別刻著 A 和 B。任一隻手臂的符文轉成 0，腹部的圓形鎖芯就會彈開。</p></div></article></div></section><section class="chap"><div class="ch-head"><img class="ch-img" src="img/story_u2.webp" alt="方鏡神殿" width="900" height="600"><div class="ch-cap"><span class="unit">4-2 一元二次方程式的解法</span><h3>方鏡神殿</h3><p>靛藍石階通往銀鏡大廳，地磚拼成方陣，鏡面左右映出對稱的光路。</p></div></div><div class="mons"><article class="mon"><img src="img/m03.webp" alt="雙鏡術士" width="128" height="128"><div class="mt"><span class="no">第 3 關</span><h4>雙鏡術士</h4><p class="sec">平方根解法</p><p class="look">靛藍長袍從中央分成銀白與深紫兩片。肩後各浮一面細長的鏡子，一面刻 ＋，一面刻 －。施法時兩面鏡子各映出一道身影，往相反方向踏出。</p></div></article><article class="mon"><img src="img/m04.webp" alt="方寸之鏡" width="128" height="128"><div class="mt"><span class="no">第 4 關</span><h4>方寸之鏡</h4><p class="sec">配方法解一元二次方程式</p><p class="look">一面浮空的方形銅鏡，鏡面由一塊大正方形和兩片長方形組成，右上角留著一個缺口。一小塊金色鏡片繞在外側，嵌入後鏡框四邊同時亮起，映出完整的正方形。</p></div></article><article class="mon"><img src="img/m05.webp" alt="公式解之龍" width="128" height="128"><div class="mt"><span class="no">第 5 關</span><h4>公式解之龍</h4><p class="sec">一元二次方程式的公式解</p><p class="look">黑曜色龍身配金色長角，雙翼全展時勾出一個巨大的根號，翼膜上浮出 b²−4ac。牠盤繞在神殿石柱上，尾端護著公式之鑰。</p></div></article></div></section><section class="chap"><div class="ch-head"><img class="ch-img" src="img/story_u3.webp" alt="赤銅港" width="900" height="600"><div class="ch-cap"><span class="unit">4-3 應用問題</span><h3>赤銅港</h3><p>赭紅貨櫃沿碼頭排開，銅軌接起倉庫、堆場與售票亭，探照燈掠過海霧。</p></div></div><div class="mons"><article class="mon"><img src="img/m06.webp" alt="鎖碼騎士" width="128" height="128"><div class="mt"><span class="no">第 6 關</span><h4>鎖碼騎士</h4><p class="sec">數字問題</p><p class="look">深紅輕甲，面罩窄得像鎖孔。方盾上嵌著兩枚可轉動的數字輪，左邊刻「十位」，右邊刻「個位」。每轉一格，盾框就跟著發出一聲清脆的金屬卡響。</p></div></article><article class="mon"><img src="img/m07.webp" alt="銅匣巨獸" width="128" height="128"><div class="mt"><span class="no">第 7 關</span><h4>銅匣巨獸</h4><p class="sec">分裝問題</p><p class="look">四足巨獸，輪廓像一頭披甲犀牛，背上整排銅匣一路疊到肩部。匣蓋掀開時，每匣都能看見同樣數量的發光貨物。</p></div></article><article class="mon"><img src="img/m08.webp" alt="十字禁衛" width="128" height="128"><div class="mt"><span class="no">第 8 關</span><h4>十字禁衛</h4><p class="sec">路寬問題</p><p class="look">藏青重甲和一面幾乎及地的方盾。盾面像從高處俯瞰的街道，一橫一直兩條銀白路帶交成十字。交會處只亮成一塊方形，兩條路帶等寬。</p></div></article><article class="mon"><img src="img/m09.webp" alt="票輪魔導" width="128" height="128"><div class="mt"><span class="no">第 9 關</span><h4>票輪魔導</h4><p class="sec">收費問題</p><p class="look">酒紅短斗篷，衣襬像一疊可撕下的金邊票券。手杖頂端有兩個咬合的轉輪，一個顯示票價，一個顯示人數。票價輪往下轉，人數輪就往上跳。</p></div></article><article class="mon"><img src="img/m10.webp" alt="真理之虎" width="128" height="128"><div class="mt"><span class="no">第 10 關</span><h4>真理之虎</h4><p class="sec">其他應用問題</p><p class="look">一頭伏肩弓背的赤銅巨虎，肩脊披著黑鐵疊甲，漆黑虎紋一路收向鞭形長尾。雙眼各映出一枚解晶，左眼是帶金色＋的琥珀晶，右眼是帶暗紅－的煙晶。胸甲上刻著雙盤天秤，兩枚解晶各落一盤，秤心掃過一道銀光。金色解晶扣進胸甲，暗紅解晶滑落，被前爪踩成滿地碎光。</p></div></article></div></section><section class="chap"><div class="ch-head"><img class="ch-img" src="img/story_u4.webp" alt="星序觀測塔" width="900" height="600"><div class="ch-cap"><span class="unit">5-1 統計資料處理</span><h3>星序觀測塔</h3><p>螺旋梯盤上深藍塔身，塔壁刻著時間軸，青色訊號沿折線逐層傳到頂端的觀測盤。</p></div></div><div class="mons"><article class="mon"><img src="img/m11.webp" alt="比率夜梟" width="128" height="128"><div class="mt"><span class="no">第 11 關</span><h4>比率夜梟</h4><p class="sec">相對次數分配表與折線圖</p><p class="look">紫黑羽毛、青白眼睛，胸前兩顆寶石和一道斜紋組成 ％。展翼時，一列星點浮在翼前，每顆星的高度對應該組的相對次數。</p></div></article><article class="mon"><img src="img/m12.webp" alt="疊星術士" width="128" height="128"><div class="mt"><span class="no">第 12 關</span><h4>疊星術士</h4><p class="sec">累積次數分配表與折線圖</p><p class="look">深青長袍垂到地面，袍尾原本只有一圈微光。每加進一組星星，原有的光帶就往上疊一層，最後整件長袍一層層亮到頂。</p></div></article><article class="mon"><img src="img/m13.webp" alt="百刻天龍" width="128" height="128"><div class="mt"><span class="no">第 13 關</span><h4>百刻天龍</h4><p class="sec">累積相對次數分配表與折線圖</p><p class="look">銀藍長龍環繞觀測塔，尾尖貼著塔底的 0％ 刻度。龍身沿折線彎折，每個轉折處都亮著一片星形鱗甲，龍首的金冠正好抵達 100％。</p></div></article></div></section></section>
+<section><h2>大魔王</h2><div class="boss"><img src="img/boss.webp" alt="斷序惡魔" width="320" height="320"><div><h3>斷序惡魔</h3><p>黑銀高角一長一短，暗紅翅膜被一道斜切的裂縫截斷。牠的長杖頂端懸著一段折線，中央缺了一顆光點。揮杖時，塔上的星點會被扯離原本的刻度。</p><p class="note">十三關全部通關後才能挑戰。</p></div></div></section>
+<section><h2>劇情模式怎麼玩</h2><div class="rules">
+<div class="box"><h3>⚔️ 一回合定勝負</h3><div class="bars">
+<div class="bar">怪物血量<i class="mb"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></i></div>
+<div class="bar">勇者血量<i class="hb"><span></span><span></span><span></span><span class="x"></span></i></div></div>
+<p class="note">一回合 10 題。答對一題，怪物扣一格；答錯一題，怪物反擊，勇者扣一格。勇者有 4 格血，血扣光之後再答錯就挑戰失敗，回合立刻結束。</p></div>
+<div class="box"><h3>🏆 通關評等</h3><table><tr><th>答對率</th><th>結果</th><th class="p">兌換點數</th></tr>
+<tr><td>未滿 60%</td><td>失敗</td><td class="p">0</td></tr><tr><td>60% 以上</td><td>勉強通關 <span class="st">★</span></td><td class="p">+1</td></tr>
+<tr><td>80% 以上</td><td>順利通關 <span class="st">★★</span></td><td class="p">+3</td></tr><tr><td>全對</td><td>完美通關 <span class="st">★★★</span></td><td class="p">+5</td></tr></table>
+<p class="note">同一關可以重複挑戰，拿到更好的評等時補上差額。每次挑戰的題目都會輪換。</p></div></div></section>
+<section><h2>解鎖順序</h2><ol class="path"><li><b>劇情模式</b><span>從第一位守護者開始，一關通關才開下一關。</span></li>
+<li><b>自由練習</b><span>已通關的小節可以自由練習，整個單元通關後可練整個單元。</span></li>
+<li><b>全範圍・模擬段考・魔王</b><span>十三關全部通關後開放。</span></li></ol>
+<p class="note">失敗沒有點數，也不會解鎖下一關，再挑戰一次就好。</p></section>
+<section class="end"><img src="img/scene_end.webp" alt="星序塔重新亮起" width="900" height="600"><p>勇者，星序塔等你來重燃！</p></section>
+</div>
+
+</body>
+</html>
