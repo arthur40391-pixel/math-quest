@@ -1,0 +1,691 @@
+{
+  "unit": "KB",
+  "bytesPerKB": 1000,
+  "files": [
+    {
+      "name": "badge_clean10.webp",
+      "kb": 9.868
+    },
+    {
+      "name": "badge_clean30.webp",
+      "kb": 10.528
+    },
+    {
+      "name": "badge_dex.webp",
+      "kb": 10.338
+    },
+    {
+      "name": "badge_first.webp",
+      "kb": 9.922
+    },
+    {
+      "name": "badge_hero.webp",
+      "kb": 10.628
+    },
+    {
+      "name": "badge_king.webp",
+      "kb": 10.258
+    },
+    {
+      "name": "badge_st14.webp",
+      "kb": 10.098
+    },
+    {
+      "name": "badge_st3.webp",
+      "kb": 9.024
+    },
+    {
+      "name": "badge_st7.webp",
+      "kb": 9.542
+    },
+    {
+      "name": "badge_steady150.webp",
+      "kb": 10.138
+    },
+    {
+      "name": "badge_steady50.webp",
+      "kb": 10.07
+    },
+    {
+      "name": "badge_task3.webp",
+      "kb": 9.272
+    },
+    {
+      "name": "badge_task7.webp",
+      "kb": 9.692
+    },
+    {
+      "name": "badge_u41.webp",
+      "kb": 10.69
+    },
+    {
+      "name": "badge_u42.webp",
+      "kb": 9.79
+    },
+    {
+      "name": "badge_u43.webp",
+      "kb": 10.158
+    },
+    {
+      "name": "badge_u51.webp",
+      "kb": 10.554
+    },
+    {
+      "name": "boss_attack.webp",
+      "kb": 33.206
+    },
+    {
+      "name": "boss_hurt.webp",
+      "kb": 39.17
+    },
+    {
+      "name": "boss_idle.webp",
+      "kb": 39.656
+    },
+    {
+      "name": "chest1.webp",
+      "kb": 16.71
+    },
+    {
+      "name": "chest2.webp",
+      "kb": 15.044
+    },
+    {
+      "name": "chest3.webp",
+      "kb": 19.224
+    },
+    {
+      "name": "comic_end_p1.webp",
+      "kb": 139.982
+    },
+    {
+      "name": "comic_end_p2.webp",
+      "kb": 153.978
+    },
+    {
+      "name": "comic_end_p3.webp",
+      "kb": 158.068
+    },
+    {
+      "name": "comic_end_p4.webp",
+      "kb": 155.468
+    },
+    {
+      "name": "comic_intro_p1.webp",
+      "kb": 122.234
+    },
+    {
+      "name": "comic_intro_p2.webp",
+      "kb": 124.814
+    },
+    {
+      "name": "comic_intro_p3.webp",
+      "kb": 139.764
+    },
+    {
+      "name": "comic_intro_p4.webp",
+      "kb": 131.932
+    },
+    {
+      "name": "comic_m01_p1.webp",
+      "kb": 121.68
+    },
+    {
+      "name": "comic_m01_p2.webp",
+      "kb": 111.32
+    },
+    {
+      "name": "comic_m01_p3.webp",
+      "kb": 109.958
+    },
+    {
+      "name": "comic_m01_p4.webp",
+      "kb": 131.188
+    },
+    {
+      "name": "comic_m02_p1.webp",
+      "kb": 151.686
+    },
+    {
+      "name": "comic_m02_p2.webp",
+      "kb": 134.38
+    },
+    {
+      "name": "comic_m02_p3.webp",
+      "kb": 138.868
+    },
+    {
+      "name": "comic_m02_p4.webp",
+      "kb": 160.492
+    },
+    {
+      "name": "comic_m03_p1.webp",
+      "kb": 137.404
+    },
+    {
+      "name": "comic_m03_p2.webp",
+      "kb": 129.1
+    },
+    {
+      "name": "comic_m03_p3.webp",
+      "kb": 137.048
+    },
+    {
+      "name": "comic_m03_p4.webp",
+      "kb": 146.528
+    },
+    {
+      "name": "comic_m04_p1.webp",
+      "kb": 117.102
+    },
+    {
+      "name": "comic_m04_p2.webp",
+      "kb": 101.68
+    },
+    {
+      "name": "comic_m04_p3.webp",
+      "kb": 113.176
+    },
+    {
+      "name": "comic_m04_p4.webp",
+      "kb": 122.684
+    },
+    {
+      "name": "comic_m05_p1.webp",
+      "kb": 156.628
+    },
+    {
+      "name": "comic_m05_p2.webp",
+      "kb": 141.666
+    },
+    {
+      "name": "comic_m05_p3.webp",
+      "kb": 136.064
+    },
+    {
+      "name": "comic_m05_p4.webp",
+      "kb": 140.682
+    },
+    {
+      "name": "comic_m06_p1.webp",
+      "kb": 136.91
+    },
+    {
+      "name": "comic_m06_p2.webp",
+      "kb": 115.206
+    },
+    {
+      "name": "comic_m06_p3.webp",
+      "kb": 116.932
+    },
+    {
+      "name": "comic_m06_p4.webp",
+      "kb": 152.988
+    },
+    {
+      "name": "comic_m07_p1.webp",
+      "kb": 159.658
+    },
+    {
+      "name": "comic_m07_p2.webp",
+      "kb": 145.082
+    },
+    {
+      "name": "comic_m07_p3.webp",
+      "kb": 148.688
+    },
+    {
+      "name": "comic_m07_p4.webp",
+      "kb": 144.57
+    },
+    {
+      "name": "comic_m08_p1.webp",
+      "kb": 136.678
+    },
+    {
+      "name": "comic_m08_p2.webp",
+      "kb": 111.06
+    },
+    {
+      "name": "comic_m08_p3.webp",
+      "kb": 121.31
+    },
+    {
+      "name": "comic_m08_p4.webp",
+      "kb": 145.528
+    },
+    {
+      "name": "comic_m09_p1.webp",
+      "kb": 149.67
+    },
+    {
+      "name": "comic_m09_p2.webp",
+      "kb": 99.996
+    },
+    {
+      "name": "comic_m09_p3.webp",
+      "kb": 141.616
+    },
+    {
+      "name": "comic_m09_p4.webp",
+      "kb": 143.494
+    },
+    {
+      "name": "comic_m10_p1.webp",
+      "kb": 130.432
+    },
+    {
+      "name": "comic_m10_p2.webp",
+      "kb": 109.99
+    },
+    {
+      "name": "comic_m10_p3.webp",
+      "kb": 113.32
+    },
+    {
+      "name": "comic_m10_p4.webp",
+      "kb": 121.54
+    },
+    {
+      "name": "comic_m11_p1.webp",
+      "kb": 112.17
+    },
+    {
+      "name": "comic_m11_p2.webp",
+      "kb": 114.176
+    },
+    {
+      "name": "comic_m11_p3.webp",
+      "kb": 95.136
+    },
+    {
+      "name": "comic_m11_p4.webp",
+      "kb": 124.772
+    },
+    {
+      "name": "comic_m12_p1.webp",
+      "kb": 145.65
+    },
+    {
+      "name": "comic_m12_p2.webp",
+      "kb": 122.284
+    },
+    {
+      "name": "comic_m12_p3.webp",
+      "kb": 132.676
+    },
+    {
+      "name": "comic_m12_p4.webp",
+      "kb": 147.536
+    },
+    {
+      "name": "comic_m13_p1.webp",
+      "kb": 166.712
+    },
+    {
+      "name": "comic_m13_p2.webp",
+      "kb": 147.97
+    },
+    {
+      "name": "comic_m13_p3.webp",
+      "kb": 158.796
+    },
+    {
+      "name": "comic_m13_p4.webp",
+      "kb": 154.974
+    },
+    {
+      "name": "cs_bg.webp",
+      "kb": 235.292
+    },
+    {
+      "name": "cs_door_l.webp",
+      "kb": 290.574
+    },
+    {
+      "name": "cs_door_r.webp",
+      "kb": 275.054
+    },
+    {
+      "name": "cs_hero_back.webp",
+      "kb": 143.428
+    },
+    {
+      "name": "cs_light.webp",
+      "kb": 216.24
+    },
+    {
+      "name": "fx_claw.webp",
+      "kb": 22.834
+    },
+    {
+      "name": "fx_hit.webp",
+      "kb": 30.0
+    },
+    {
+      "name": "fx_ko.webp",
+      "kb": 49.62
+    },
+    {
+      "name": "fx_slash.webp",
+      "kb": 22.072
+    },
+    {
+      "name": "fx_star.webp",
+      "kb": 42.594
+    },
+    {
+      "name": "hero_attack.webp",
+      "kb": 29.034
+    },
+    {
+      "name": "hero_hurt.webp",
+      "kb": 22.628
+    },
+    {
+      "name": "hero_idle.webp",
+      "kb": 18.416
+    },
+    {
+      "name": "m01_attack.webp",
+      "kb": 38.008
+    },
+    {
+      "name": "m01_dark.webp",
+      "kb": 25.402
+    },
+    {
+      "name": "m01_hurt.webp",
+      "kb": 30.468
+    },
+    {
+      "name": "m01_idle.webp",
+      "kb": 30.052
+    },
+    {
+      "name": "m01_tamed.webp",
+      "kb": 28.884
+    },
+    {
+      "name": "m02_attack.webp",
+      "kb": 27.276
+    },
+    {
+      "name": "m02_dark.webp",
+      "kb": 30.724
+    },
+    {
+      "name": "m02_hurt.webp",
+      "kb": 24.962
+    },
+    {
+      "name": "m02_idle.webp",
+      "kb": 30.262
+    },
+    {
+      "name": "m02_tamed.webp",
+      "kb": 32.114
+    },
+    {
+      "name": "m03_attack.webp",
+      "kb": 33.992
+    },
+    {
+      "name": "m03_dark.webp",
+      "kb": 27.81
+    },
+    {
+      "name": "m03_hurt.webp",
+      "kb": 36.276
+    },
+    {
+      "name": "m03_idle.webp",
+      "kb": 35.954
+    },
+    {
+      "name": "m03_tamed.webp",
+      "kb": 26.776
+    },
+    {
+      "name": "m04_attack.webp",
+      "kb": 27.72
+    },
+    {
+      "name": "m04_dark.webp",
+      "kb": 23.92
+    },
+    {
+      "name": "m04_hurt.webp",
+      "kb": 28.146
+    },
+    {
+      "name": "m04_idle.webp",
+      "kb": 31.498
+    },
+    {
+      "name": "m04_tamed.webp",
+      "kb": 25.532
+    },
+    {
+      "name": "m05_attack.webp",
+      "kb": 30.304
+    },
+    {
+      "name": "m05_dark.webp",
+      "kb": 19.278
+    },
+    {
+      "name": "m05_hurt.webp",
+      "kb": 29.174
+    },
+    {
+      "name": "m05_idle.webp",
+      "kb": 29.974
+    },
+    {
+      "name": "m05_tamed.webp",
+      "kb": 22.268
+    },
+    {
+      "name": "m06_attack.webp",
+      "kb": 25.322
+    },
+    {
+      "name": "m06_dark.webp",
+      "kb": 25.398
+    },
+    {
+      "name": "m06_hurt.webp",
+      "kb": 27.772
+    },
+    {
+      "name": "m06_idle.webp",
+      "kb": 25.12
+    },
+    {
+      "name": "m06_tamed.webp",
+      "kb": 26.206
+    },
+    {
+      "name": "m07_attack.webp",
+      "kb": 26.166
+    },
+    {
+      "name": "m07_dark.webp",
+      "kb": 20.422
+    },
+    {
+      "name": "m07_hurt.webp",
+      "kb": 26.272
+    },
+    {
+      "name": "m07_idle.webp",
+      "kb": 26.358
+    },
+    {
+      "name": "m07_tamed.webp",
+      "kb": 21.316
+    },
+    {
+      "name": "m08_attack.webp",
+      "kb": 27.576
+    },
+    {
+      "name": "m08_dark.webp",
+      "kb": 20.488
+    },
+    {
+      "name": "m08_hurt.webp",
+      "kb": 26.82
+    },
+    {
+      "name": "m08_idle.webp",
+      "kb": 28.078
+    },
+    {
+      "name": "m08_tamed.webp",
+      "kb": 22.274
+    },
+    {
+      "name": "m09_attack.webp",
+      "kb": 32.67
+    },
+    {
+      "name": "m09_dark.webp",
+      "kb": 25.314
+    },
+    {
+      "name": "m09_hurt.webp",
+      "kb": 21.654
+    },
+    {
+      "name": "m09_idle.webp",
+      "kb": 28.692
+    },
+    {
+      "name": "m09_tamed.webp",
+      "kb": 29.334
+    },
+    {
+      "name": "m10_attack.webp",
+      "kb": 26.778
+    },
+    {
+      "name": "m10_dark.webp",
+      "kb": 26.116
+    },
+    {
+      "name": "m10_hurt.webp",
+      "kb": 31.138
+    },
+    {
+      "name": "m10_idle.webp",
+      "kb": 33.874
+    },
+    {
+      "name": "m10_tamed.webp",
+      "kb": 25.056
+    },
+    {
+      "name": "m11_attack.webp",
+      "kb": 34.964
+    },
+    {
+      "name": "m11_dark.webp",
+      "kb": 18.234
+    },
+    {
+      "name": "m11_hurt.webp",
+      "kb": 24.81
+    },
+    {
+      "name": "m11_idle.webp",
+      "kb": 25.578
+    },
+    {
+      "name": "m11_tamed.webp",
+      "kb": 20.752
+    },
+    {
+      "name": "m12_attack.webp",
+      "kb": 30.146
+    },
+    {
+      "name": "m12_dark.webp",
+      "kb": 29.702
+    },
+    {
+      "name": "m12_hurt.webp",
+      "kb": 31.316
+    },
+    {
+      "name": "m12_idle.webp",
+      "kb": 29.484
+    },
+    {
+      "name": "m12_tamed.webp",
+      "kb": 32.744
+    },
+    {
+      "name": "m13_attack.webp",
+      "kb": 31.886
+    },
+    {
+      "name": "m13_dark.webp",
+      "kb": 34.254
+    },
+    {
+      "name": "m13_hurt.webp",
+      "kb": 26.86
+    },
+    {
+      "name": "m13_idle.webp",
+      "kb": 38.768
+    },
+    {
+      "name": "m13_tamed.webp",
+      "kb": 39.382
+    },
+    {
+      "name": "run1.webp",
+      "kb": 10.47
+    },
+    {
+      "name": "run2.webp",
+      "kb": 9.246
+    },
+    {
+      "name": "run3.webp",
+      "kb": 10.03
+    },
+    {
+      "name": "run4.webp",
+      "kb": 8.994
+    },
+    {
+      "name": "stamp_1.webp",
+      "kb": 20.164
+    },
+    {
+      "name": "stamp_2.webp",
+      "kb": 28.796
+    },
+    {
+      "name": "stamp_3.webp",
+      "kb": 28.834
+    },
+    {
+      "name": "stamp_fail.webp",
+      "kb": 21.378
+    },
+    {
+      "name": "star_off.webp",
+      "kb": 9.664
+    },
+    {
+      "name": "star_on.webp",
+      "kb": 15.888
+    }
+  ],
+  "totalKB": 11759.792
+}
